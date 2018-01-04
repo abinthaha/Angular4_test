@@ -1,0 +1,6 @@
+<section>
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <input [(ngModel)]="calculate.value" placeholder="Result" name="value">
+  </form>
+  <app-button (uploaded)="someMethod($event)"></app-button>
+</section>
